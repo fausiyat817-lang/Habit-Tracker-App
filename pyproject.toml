@@ -18,4 +18,4 @@ dependencies = [
 habit-tracker = "src.main:app"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = ["src/habit_tracker"]
