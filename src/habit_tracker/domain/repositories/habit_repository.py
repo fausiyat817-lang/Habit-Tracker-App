@@ -6,23 +6,23 @@ from src.habit_tracker.domain.entities.habit import Habit
 
 class HabitRepository(ABC):
     @abstractmethod
-    def create(self, habit: Habit) -> None:
+    def create_habit(self, habit: Habit) -> Habit:
         pass
 
     @abstractmethod
-    def get_by_id(self, id: str) -> Habit | None:
+    def get_habit_by_id(self, id: str) -> Habit | None:
         pass
 
     @abstractmethod
-    def get_all(self) -> list[Habit]:
+    def get_all_habits(self) -> list[Habit]:
         pass
     
     @abstractmethod
-    def update(self, habit: Habit) -> None:
+    def update_habit(self, habit: Habit) -> None:
         pass
     
     @abstractmethod
-    def delete(self, id: str) -> None:
+    def delete_habit(self, id: str) -> None:
         pass
     
     @abstractmethod
